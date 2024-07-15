@@ -1,0 +1,36 @@
+.add-container{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    font-size: 16px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.flex-col button{
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color:black;
+    color: white;
+    
+}
+.inputs input{
+    padding: 5px;
+    border-radius: 5px;
+ 
+}
+.add-category select{
+    padding: 5px;
+}
+.upload-container img{
+    width: 200px;
+    height: 300px;
+}
+.flex-col p{
+    font-size: 20px;
+    font-weight: bold;
+}

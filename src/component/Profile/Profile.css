@@ -1,0 +1,49 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    font-size: 16px;
+}
+.profile-container button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:gray;
+    color: white;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+}
+.social-add input{
+    padding: 10px;
+    height: 10px;
+}
+.social-add img{
+    width: 40px;
+}
+.social-add{
+    display: flex;
+    gap: 10px;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-name img{
+    width: 200px;
+    height: 200px;
+}
+.profile-name textarea{
+    width: 80%;
+    height:40px;
+    
+}

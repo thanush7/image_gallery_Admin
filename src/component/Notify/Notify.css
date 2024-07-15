@@ -1,0 +1,33 @@
+.notify-container{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.titles{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,180px);
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+}
+.table-format{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr;
+    text-align: start;
+    align-items: center;
+}
+.but{
+    justify-content: center;
+    padding: 10px;
+}
+.but button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,46 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    border: #B2BEB5 1px solid;
+    height: 50px;
+    background-color: #E0E5E5 ;
+}
+.nav-left{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav-right img{
+    width: 30px;
+    height: 30px;
+}
+.nav-right .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: 1px;
+    right: 60px;
+    
+      
+}
+.nav-right button{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #3399aa;
+    color: white;
+    
+}
+.nav-right button:hover{
+    background-color: black;
+}
