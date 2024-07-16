@@ -1,6 +1,6 @@
 .notify-container{
     width: 70%;
-    margin-left: max(5vw,25px);
+    margin-left: max(20vw,25px);
     margin-top: 50px;
     display: flex;
     flex-direction: column;

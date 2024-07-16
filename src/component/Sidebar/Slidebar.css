@@ -5,6 +5,7 @@
     height: 1000px;
     justify-content: center;
     text-align: center;
+    position:fixed;
 }
 .add-items{
     display: flex;
@@ -28,4 +29,10 @@
 }
 .add-items Link{
     text-decoration: none;
+}
+.add-items button:hover{
+    background-color: white;
+}
+.add-items .active{
+ background-color:lightgreen;
 }

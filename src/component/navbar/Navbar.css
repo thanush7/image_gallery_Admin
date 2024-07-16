@@ -4,6 +4,8 @@
     border: #B2BEB5 1px solid;
     height: 50px;
     background-color: #E0E5E5 ;
+    position: sticky;
+    top: 0px;
 }
 .nav-left{
     display: flex;

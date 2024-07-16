@@ -5,7 +5,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 
 const Add = () => {
-  const url='http://localhost:4000';
+  const url=assets.url;
   const [image, setImage] = useState(false);
   const [data, setData] = useState(
     {
@@ -31,7 +31,7 @@ const Add = () => {
     if (response.data.success) {
       setData({
         imageName: "",
-        category: "",
+        category: "baby",
         likes: 0
       })
       setImage(false);
@@ -59,9 +59,9 @@ const Add = () => {
         <div className="add-category">
           <p>Image Category</p>
           <select onChange={onChangeHandler} value={data.category} name="category">
-            <option value="model">model</option>
             <option value="architecture">architecture</option>
             <option value="wedding">wedding</option>
+            <option value="model">model</option>
             <option value="product">product</option>
             <option value="street">street</option>
             <option value="macro">macro</option>

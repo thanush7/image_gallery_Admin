@@ -9,6 +9,8 @@ import whatsapp from './whatsapp.png'
 import facebook from './facebook.png'
 import instagram from './instagram.png'
 import mail from './mail.png'
+
+const url = 'http://localhost:4000';
 export const assets ={
     logo,
     add_icon,
@@ -20,7 +22,6 @@ export const assets ={
     whatsapp,
     facebook,
     instagram,
-    mail
+    mail,
+    url
 }
-
-export const url = 'http://localhost:4000'

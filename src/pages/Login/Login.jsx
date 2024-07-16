@@ -29,7 +29,7 @@ const Login = () => {
     <div className='login-container'>
         <form onSubmit={onSubmitHandler} className="login-details">
             <input type="text" onChange={(event)=>setEmail(event.target.value)} name='email'  placeholder='enter Id'required/>
-            <input type="text" onChange={(event)=>setPassword(event.target.value)} name='password'  placeholder='enter password' required />
+            <input type="password" onChange={(event)=>setPassword(event.target.value)} name='password'  placeholder='enter password' required />
             <button type='submit'>Login</button>
         </form>
     </div>

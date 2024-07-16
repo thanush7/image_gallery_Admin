@@ -3,8 +3,9 @@ import './Notify.css'
 import { useState,useEffect } from 'react'
 import {toast} from 'react-toastify'
 import axios from 'axios'
+import { assets } from '../../assets/assets'
 const Notify = () => {
-  const url='http://localhost:4000'
+  const url=assets.url;
   const [list,setList]=useState([])
   
   const fetchList=async()=>{

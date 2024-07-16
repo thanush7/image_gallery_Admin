@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './List.css'
 import axios from 'axios'
 import { toast } from 'react-toastify';
+import { assets } from '../../assets/assets';
 const List = () => {
-  const url='http://localhost:4000'
+  const url= assets.url;
   const [list,setList]=useState([])
   const [data,setData]=useState('all')
   
