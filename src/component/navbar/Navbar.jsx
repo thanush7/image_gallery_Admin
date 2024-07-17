@@ -1,11 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
-import profile from '../../assets/profile_image.png'
 import notify from '../../assets/notifi.png'
 import { useEffect,useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import profile from '../../assets/profile_image.jpg'
 const Navbar = () => {
   const navigate = useNavigate();
   const [token,setToken]=useState("");

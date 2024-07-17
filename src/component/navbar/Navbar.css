@@ -23,6 +23,7 @@
 .nav-right img{
     width: 30px;
     height: 30px;
+    border-radius: 50px;
 }
 .nav-right .dot{
     position: absolute;

@@ -5,14 +5,6 @@ const Profile = () => {
   const [image,setImage]=useState(false)
   return (
     <form className='profile-container'>
-      <h4>Image</h4>
-        <div className="profile-name">
-        <label htmlFor="image">
-            <img src={image ? URL.createObjectURL(image) : assets.upload_area} alt="" />
-          </label>
-          <h4>Bio</h4>
-          <textarea name="" id=""></textarea> 
-        </div>
         <div className="social">
           <h4>Social Media</h4>
             <div className="social-add">

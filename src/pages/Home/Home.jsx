@@ -7,9 +7,9 @@ import List from '../../pages/List/List'
 import './Home.css'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Orders from '../../pages/Orders/Orders'
 import Notify from '../../component/Notify/Notify'
 import Profile from '../../component/Profile/Profile'
+import Template from '../Template/Template'
 const Home = () => {
   return (
     <div>
@@ -19,9 +19,9 @@ const Home = () => {
         <Routes>
           <Route path='add' element={<Add />} />
           <Route path='list' element={<List />} />
-          <Route path='order' element={<Orders />} />
           <Route path='message' element={<Notify />} />
-          <Route path='profile' element={<Profile />} />
+          <Route path='edit' element={<Profile />} />
+          <Route path='video' element={<Template/>}   />
         </Routes>
       </div>
     </div>
