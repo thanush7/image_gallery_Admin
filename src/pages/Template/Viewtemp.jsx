@@ -31,14 +31,14 @@ const Viewtemp = () => {
     <div className='view-container'>
         <div className='view-titles'>
             <b>Image</b>
-            <b>Url</b>
+            <b>name</b>
         </div>
         {
           list.map((item,index)=>{
             return (
             <div className='table'>
               <img src={`${url}/timages/`+item.image} alt="" />
-              <p name="" id="">{item.url}</p>
+              <p name="" id="">{item.name}</p>
               <button onClick={()=>removeImage(item._id)} className='remove'>Remove</button>
             </div>)
           })

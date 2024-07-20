@@ -26,6 +26,10 @@
     width: 250px;
     padding: 10px;
 }
+.upload-containr img{
+    width: 320px;
+    height: 130px;
+}
 .add-temp-container  button{
     padding: 5px;
     width: 100px;
@@ -40,13 +44,13 @@
 }
 .view-titles{
     display: grid;
-    grid-template-columns: repeat(2,250px);
+    grid-template-columns: 1fr 2fr 4fr;
 }
 .table{
     margin-top: 20px;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 4fr;
 }
 .table img{
     width: 100px;

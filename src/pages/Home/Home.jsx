@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Notify from '../../component/Notify/Notify'
 import Profile from '../../component/Profile/Profile'
 import Template from '../Template/Template'
+import Editpass from '../Editpass/Editpass'
 const Home = () => {
   return (
     <div>
@@ -17,11 +18,12 @@ const Home = () => {
       <div className="app-content">
         <Slidebar />
         <Routes>
-          <Route path='add' element={<Add />} />
-          <Route path='list' element={<List />} />
-          <Route path='message' element={<Notify />} />
-          <Route path='edit' element={<Profile />} />
+          <Route path='add' element={<Add/>} />
+          <Route path='list' element={<List/>} />
+          <Route path='message' element={<Notify/>} />
+          <Route path='edit' element={<Profile/>} />
           <Route path='video' element={<Template/>}   />
+          <Route path='editpass' element={<Editpass/>}/>
         </Routes>
       </div>
     </div>

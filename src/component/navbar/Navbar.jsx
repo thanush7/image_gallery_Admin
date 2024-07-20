@@ -3,8 +3,9 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 import notify from '../../assets/notifi.png'
 import { useEffect,useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import profile from '../../assets/profile_image.jpg'
+
 const Navbar = () => {
   const navigate = useNavigate();
   const [token,setToken]=useState("");
@@ -31,7 +32,7 @@ const Navbar = () => {
         <div className="nav-right">
             <img src={notify} alt="" />
             {/* <div className={false?"":"dot"}></div> */}
-            <img src={profile} alt="" />
+            <Link to='/home/editpass'><img src={profile} alt="" /></Link>
             <button onClick={logout}>log out</button>
         </div>
     </div>

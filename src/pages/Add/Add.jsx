@@ -67,7 +67,7 @@ const Add = () => {
             <option value="macro">macro</option>
             <option value="landscape">landscape</option>
             <option value="nature">nature</option>
-            <option value="black and white">black and white</option>
+            <option value="back&white">back&white</option>
             <option value="astro">astro</option>
             <option value="baby">baby</option>
           </select>

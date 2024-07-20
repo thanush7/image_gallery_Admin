@@ -66,7 +66,7 @@ const List = () => {
           list.map((item,index)=>{
             if(data===item.category){
               return (
-                <div className='table-for'>
+                <div key={index} className='table-for'>
                     <img src={`${url}/images/`+item.image} alt="" />
                     <p>{item.imageName}</p>
                     <p>{item.category}</p>

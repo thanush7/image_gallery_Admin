@@ -1,0 +1,23 @@
+.edit-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin-left: max(20vw,25px);
+    margin-top: 50px;
+    font-size: 16px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+}
+.inputs input{
+    padding: 10px;
+}
+.inputs button{
+    padding: 8px;
+    width: 100px;
+    border-radius: 10px;
+}

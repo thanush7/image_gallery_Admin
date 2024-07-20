@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import  './Login.css'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import {toast} from 'react-toastify'
 const Login = () => {
   const url='http://localhost:4000';
   
@@ -18,6 +19,8 @@ const Login = () => {
         const response = await axios.post(`${url}/api/admin/login`, {email,password});
         if (response.data.success) {
             navigate('/home');
+        }else{
+          toast.error('wrong credentials')
         }
     } catch (error) {
         console.error('There was an error logging in!', error);
