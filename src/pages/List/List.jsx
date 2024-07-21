@@ -8,14 +8,7 @@ const List = () => {
   const [list,setList]=useState([])
   const [data,setData]=useState('all')
   
-  // const onChangeHandler = (event) => {
-  //   const name = event.target.name;
-  //   const value = event.target.value;
-  //   setData(data => ({ ...data, [name]: value }));
-  //   console.log(data);
-  // }
-  
-  const fetchList=async()=>{
+   const fetchList=async()=>{
     const response=await axios.get(`${url}/api/gallery/list`);
     if(response.data.success){
       setList(response.data.data);
@@ -36,7 +29,7 @@ const List = () => {
   useEffect(()=>{
     fetchList();
   },[])
-  
+  const filteredList = data === 'all' ? list : list.filter(item => item.category === data);
   return (
     <div className='list-container'>
         <div className="filter">
@@ -60,38 +53,22 @@ const List = () => {
           <b>Image</b>
           <b>Name</b>
           <b>Category</b>
-          <b>likes</b>
         </div>
         {
-          list.map((item,index)=>{
-            if(data===item.category){
+          filteredList.map((item,index)=>{
               return (
                 <div key={index} className='table-for'>
                     <img src={`${url}/images/`+item.image} alt="" />
                     <p>{item.imageName}</p>
                     <p>{item.category}</p>
-                    <p>{item.likes}</p>
                     <div className='buttons'>
                     {/* <button className='view'>View</button> */}
                     <button onClick={()=>removeImage(item._id)}className='remove'>Remove</button>
                     </div>
                 </div>
               )
-            }
-            if(data==='all'){
-              return (
-                <div className='table-for'>
-                    <img src={`${url}/images/`+item.image} alt="" />
-                    <p>{item.imageName}</p>
-                    <p>{item.category}</p>
-                    <p>{item.likes}</p>
-                    <div className='buttons'>
-                    {/* <button className='view'>View</button> */}
-                    <button onClick={()=>removeImage(item._id)}className='remove'>Remove</button>
-                    </div>
-                </div>
-              )
-            }
+      
+         
             
           })
         }

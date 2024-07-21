@@ -10,7 +10,7 @@ import facebook from './facebook.png'
 import instagram from './instagram.png'
 import mail from './mail.png'
 
-const url = 'http://localhost:4000';
+const url = 'https://gallery-backend-oaex.onrender.com';
 export const assets ={
     logo,
     add_icon,

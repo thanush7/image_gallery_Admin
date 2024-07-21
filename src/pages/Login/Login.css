@@ -27,8 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#B2BEB5;
+    background: #BDC3C7 ;
     margin-top: 25vh;
     margin-left: 80vh;
-    
+    border-radius: 10px;
+}
+.login-details button:hover{
+    background-color:#90EE90    ;
 }
