@@ -3,8 +3,9 @@ import  './Login.css'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import {toast} from 'react-toastify'
+import { assets } from '../../assets/assets';
 const Login = () => {
-  const url='http://localhost:4000';
+  const url=assets.url;
   
   const [email,setEmail]=useState('');
   const [password,setPassword]=useState('');
