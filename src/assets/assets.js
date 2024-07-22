@@ -10,7 +10,7 @@ import facebook from './facebook.png'
 import instagram from './instagram.png'
 import mail from './mail.png'
 
-const url = 'https://gallery-backend-nb096c5ct-thanushs-projects.vercel.app';
+const url = 'https://gallery-backend-8qcqhaqap-thanushs-projects.vercel.app';
 export const assets ={
     logo,
     add_icon,
