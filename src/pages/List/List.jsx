@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import { assets } from '../../assets/assets';
 const List = () => {
   const url= assets.url;
-  const imgurl='https://console.firebase.google.com/project/imagegallery-bbc64/storage/imagegallery-bbc64.appspot.com/files/~2Fuploads'
   const [list,setList]=useState([])
   const [data,setData]=useState('all')
   
@@ -59,7 +58,7 @@ const List = () => {
           filteredList.map((item,index)=>{
               return (
                 <div key={index} className='table-for'>
-                    <img src={`${imgurl}`+item.image} alt="" />
+                    <img src={`${url}/images/`+item.image} alt="" />
                     <p>{item.imageName}</p>
                     <p>{item.category}</p>
                     <div className='buttons'>
